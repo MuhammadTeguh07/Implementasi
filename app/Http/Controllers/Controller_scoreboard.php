@@ -34,7 +34,7 @@ class Controller_scoreboard extends Controller
     public function controller_index(){
         return view('scoreboard/controller');
     }
-
+     
     public function controller_store(Request $r){
         if($r->countdown != null){
             DB::table('scoreboard')->where('id', $r->id)->update([
